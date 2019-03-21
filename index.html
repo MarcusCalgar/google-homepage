@@ -1,54 +1,61 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Fake Google</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" media="screen" href="./style.css">
-</head>
-<body>
-  <header>
-    <nav>
-      <ul>
-        <a href="#"><li>Gmail</li></a>
-        <a href="#"><li>Pictures</li></a>
-        <a href="#" title="Google-apps" role="button" tabindex="0"><li>
-          <img src="./google-apps-grey.png" alt="Google-apps" width="30px" height="30px">
-        </li></a>
-        <li><button>Sign In</button></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="google-logo">
-      <img src="./googlelogo_color_272x92dp.png" alt="Google Logo">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Fake Google</title>
+  </head>
+  <body>
+    <div class="grid main">
+      <nav>
+        <div class="navigation">
+          <ul>
+            <a href="#"><li>Gmail</li></a>
+            <a href="#"><li>Pictures</li></a>
+            <li>
+              <a href="#"><img src="./google-apps-grey.png" alt="Google apps" height="24px" width="24px"></a>
+            </li>
+            <li>
+              <button style="background-color:#4387fd; color: white; padding: 3px 5px" >Sign In</button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <main>
+        <div class="form">
+          <form action="#" method="post">
+            <div class="logo">
+              <img src="./googlelogo_color_272x92dp.png" alt="Google Logo" height="125px">
+            </div>
+            <div class="input">
+              <img src="./tia.png" alt="input method">
+            </div>
+            <label for="searchbar"></label>
+            <input type="text" name="searchbar" id="searchbar" class="searchbar">
+            <br>
+            <input type="submit" value="Google-search" class="button">
+            <input type="submit" value="I'm feeling lucky" class="button">
+          </form>
+        </div>
+      </main>
+      <footer>
+        <div class="country">Hungary</div>
+          <div class="misc">
+            <div class="leftmenu">
+              <ul>
+                <a href="#"><li>Advert</li></a>
+                <a href="#"><li>Bussiness</li></a>
+                <a href="#"><li>About</li></a>
+              </ul>
+            </div>
+            <div class="rightmenu">
+              <ul>
+                <a href="#"><li>Privacy</li></a>
+                <a href="#"><li>Terms</li></a>
+                <a href="#"><li>Settings</li></a>
+              </ul>
+            </div>
+        </div>
+      </footer>
     </div>
-    <div class="search-bar"></div>
-    <div class="input-methods">
-      <img src="./tia.png" alt="Input Methods">
-    </div>
-    <div class="google-search">
-      <button>Google-search</button> 
-    </div>
-    <div class="i-have-a-good-day">
-      <button>I have a good day</button>
-    </div>
-  </main>
-  <footer>
-    <div class="country">
-      <p>Hungary</p>
-    </div>
-    <div class="details">
-      <ul>
-        <li>Advertisement</li>
-        <li>Bussiness</li>
-        <li>About</li>
-        <li>Privacy</li>
-        <li>Terms</li>
-        <li>Settings</li>
-      </ul>
-    </div>
-  </footer>
-</body>
+  </body>
 </html>
